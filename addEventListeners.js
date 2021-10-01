@@ -1,7 +1,7 @@
 // const btn = document.querySelector("button");
-// // btn.onclick = function () {
-// //   console.log("You clicked me.");
-// // };
+// btn.onclick = function () {
+//   console.log("You clicked me.");
+// };
 
 // btn.addEventListener("click", function () {
 //   alert("you clicked me!!");
@@ -21,17 +21,26 @@
 
 // window.addEventListener("scroll", function () {
 //   console.log("Stop Scrolling");
+// // });
+// const btn = document.querySelector("button");
+// btn.addEventListener("mouseover", function () {
+//   console.log("Mouse Over Me!");
+//   const height = Math.floor(Math.random() * window.innerHeight);
+//   const width = Math.floor(Math.random() * window.innerWidth);
+//   btn.style.left = `${width}px`;
+//   btn.style.top = `${height}px`;
 // });
+
+// btn.addEventListener("click", function () {
+//   btn.innerText = "You Got Me!";
+//   document.body.style.backgroundColor = "green";
+// });
+
+console.log("start");
+
 const btn = document.querySelector("button");
-btn.addEventListener("mouseover", function () {
-  console.log("Mouse Over Me!");
-  const height = Math.floor(Math.random() * window.innerHeight);
-  const width = Math.floor(Math.random() * window.innerWidth);
-  btn.style.left = `${width}px`;
-  btn.style.top = `${height}px`;
+btn.addEventListener("click", function () {
+  console.log("callback");
 });
 
-btn.addEventListener("click", function () {
-  btn.innerText = "You Got Me!";
-  document.body.style.backgroundColor = "green";
-});
+console.log("End");
